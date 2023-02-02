@@ -15,9 +15,9 @@ if __name__ == "__main__":
 	N = 3
 	lp = []
 	for i in range(N):
-	lp.append(Process(target=f, name=f"ana_{i}"))
+		lp.append(Process(target=f, name=f"ana_{i}"))
 	for p in lp:
-	p.start()
-	q = Process(target=g)
-	q.start()
+		p.start()
+		q = Process(target=g)
+		q.start()
 	print ("fin")
